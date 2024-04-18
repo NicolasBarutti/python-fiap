@@ -63,24 +63,39 @@
 #     print(f"{fahr:.1f} {celsius:.1f}")
 #     fahr = fahr + 1
 
+# questao 8
+
+num = int(input("Digite um numero:"))
+
+divisores = 0
+
+for div in range (1, num + 1):
+    if num % div == 0:
+        divisores = divisores + 1
+
+if divisores == 2:
+    print(f"{num} é um número primo")
+else:
+    print(f"{num} não é primo")
+
 # questao 11
 
-n = int(input("Informe n: "))
+# n = int(input("Informe n: "))
 
-while n <= 0:
-    n = int(input("Inválido, digite novamente: "))
+# while n <= 0:
+#     n = int(input("Inválido, digite novamente: "))
 
-if n == 1 or n == 2:
-    print("Fibonacci vale 1")
-else:
-    ant = 1 
-    atual = 1
-    prox = ant + atual
-    posicao = 3
+# if n == 1 or n == 2:
+#     print("Fibonacci vale 1")
+# else:
+#     ant = 1 
+#     atual = 1
+#     prox = ant + atual
+#     posicao = 3
 
-while posicao < n:
-    ant = atual
-    atual = prox
-    prox = ant + atual
-    posicao = posicao + 1
-print(f"Fibonacci vale {prox} ")
+# while posicao < n:
+#     ant = atual
+#     atual = prox
+#     prox = ant + atual
+#     posicao = posicao + 1
+# print(f"Fibonacci vale {prox} ")
