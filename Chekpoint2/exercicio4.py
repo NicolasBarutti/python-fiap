@@ -5,7 +5,7 @@ quantidade = 0
 contagem = 0
 
 while contagem < n:
-    numero = float(input("Digite o {}º número da sequência: "))
+    numero = float(input("Digite o número da sequência: "))
     if numero > 50:
         soma = soma + numero
     if numero < 100:
