@@ -7,7 +7,18 @@ def cria (tipo):
         monte.append( (valor, '♠'))
         monte.append( (valor, '♥'))
         monte.append( (valor, '♣'))
-    
+
+    if tipo == 'truco':
+       for _ in range(12):
+           monte.pop(28) 
+    # i = 0
+    # while i < 12:
+    #    monte.pop(32)
+    #    i = i + 1
+
+    if tipo == '2macos':
+        monte = monte + monte
+
     return monte
 
 def to_str(carta):
@@ -44,6 +55,15 @@ def embaralha (monte: list):
         monte[j] = aux
 
     # random.shuffle(monte)
+
+def to_str_list(mao: list):
+    saida = ""
+    for carta in mao:
+        saida =f"{saida} {to_str(carta)}"
+    return saida
+
+
+
 
 if __name__ == '_main_' :  
     deck = cria('maco')
