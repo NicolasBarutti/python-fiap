@@ -1,0 +1,8 @@
+BubbleSort - ele é aquele efeito da bolha, ele pega o ultimo elemento e compara com o anterior,
+se ele for mais leve ele vai subir até chagar na sua posição e todos que são maior que ele anda pra frente uma
+ele vai fazer um por um até arrumar todos
+
+Insertion Sort -  ele vai pegar o ultimo numero e vai comparando com os anteriores com isso se for menor ele vai subindo,
+mas se ele achar um maior que ele ele troca de posição com o numero 
+
+Selection Sort - O selection é diferente então ele vai percorrer a lista e vai achar o menor ou o maior e vai colocar na posição certa
