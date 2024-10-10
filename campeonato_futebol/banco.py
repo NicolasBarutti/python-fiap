@@ -1,23 +1,19 @@
 import oracledb
 
 def get_conexao():
-<<<<<<< HEAD
-    pass 
-
-def consulta_time(nome: str) -> dict:
-    pass
-
-def insere_time(time: dict):
-    pass
-
-def atualiza_time(time: dict):
-    pass
-
-def insere_partida(partida: dict):
-    pass
-=======
     return oracledb.connect(user='pf0313', password='professor#23',
                             dsn="oracle.fiap.com.br/orcl")
+
+
+def recupera_times():
+    sql = '''select id, nome, vitorias, empates, derrotas, 
+        gols_pro, gols_contra from t_time'''
+    
+    with get_conexao() as con:
+        with con.cursor() as cur:
+            cur.execute(sql)
+            dado = cur.fetchall()
+        return dado    
 
 
 def consulta_time(nome: str) -> dict:
@@ -67,4 +63,3 @@ def insere_partida(partida: dict):
         with con.cursor() as cur:
             cur.execute(sql, partida)
         con.commit()
->>>>>>> origin/main
